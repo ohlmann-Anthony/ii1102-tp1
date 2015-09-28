@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Pave {
+	public static void main (String [] args){
+
+	// On déclare les variables.
+	float Hauteur;
+	float Longueur; 
+	float Largeur;
+	float Volume;
+	
+	// On initialise un Scanner.
+	Scanner scan = new Scanner (System.in);
+	// On demande les variables à lutilisateur.
+	Hauteur = scan.nextFloat();
+	Longueur = scan.nextFloat();
+	Largeur = scan.nextFloat();
+	
+	// On calcule le volume du pavé.
+	Volume = Hauteur*Longueur*Largeur;
+	
+	// On affiche le résultat.
+	System.out.println("Le volume est de " + Volume + ".");
+}
+}
